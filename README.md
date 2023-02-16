@@ -2,7 +2,7 @@
 
 ![Version](https://img.shields.io/badge/version-1.0-blue.svg?cacheSeconds=2592000)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#)
-![GitHub downloads](https://img.shields.io/badge/dynamic/json?label=Views&query=value&url=https://api.countapi.xyz/hit/liquidised/public-marauth)
+![GitHub downloads](https://img.shields.io/badge/dynamic/json?label=Views&query=value&url=https://api.countapi.xyz/hit/liquidised/marauth-public)
 
 > This is an oAuth Generator made by marcat & Gute Nacht. It is controlled by a single MongoDB Database and a Discord Bot.
 
