@@ -2,12 +2,8 @@
 // gute nacht was here
 
 const express = require("express");
-const axios = require('axios')
 const app = express();
 const port = 1025;
-const {
-  getWebhook
-} = require('./utils/mongodb.js')
 
 
 app.set("view engine", "ejs");
