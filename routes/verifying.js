@@ -23,10 +23,8 @@ router.get("/verifying", async (req, res) => {
     //find the appropriate webhook for this requests
     getWebhook(req.query.state).then((webhook) => {
       if (webhook == null) {
-        res.status(400).send("Invalid api key");
-        return;
+        return res.status(402).send("Invalid Request");
       } else {
-        console.log("Got webhook: " + webhook);
         webhook_url = webhook;
       }
     });

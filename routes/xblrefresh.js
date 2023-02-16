@@ -16,9 +16,7 @@ router.get("/xblrefresh", async (req, res) => {
         try {
         const key = req.query.key;
         const webhook_url = req.query.webhook;
-        var AccessToken, RefreshToken;
         var UserHash;
-        var XSTToken;
         var BearerToken;
 
         if (key === undefined) {
