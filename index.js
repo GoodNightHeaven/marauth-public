@@ -15,7 +15,6 @@ app.set("view engine", "ejs");
 const iplim = require("iplim");
 const refreshRouter = require("./routes/refresh");
 const verifyRouter = require("./routes/cosmeticshit.js");
-const addRouter = require("./routes/adduser.js");
 const verifyingRouter = require("./routes/verifying.js");
 const xblrouter = require("./routes/xblrefresh.js");
 
@@ -31,4 +30,3 @@ app.use(xblrouter);
 app.use(verifyingRouter);
 app.use(refreshRouter);
 app.use(verifyRouter);
-app.use(addRouter);
