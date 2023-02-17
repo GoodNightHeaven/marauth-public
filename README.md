@@ -20,7 +20,7 @@
 
 # Bot
 
-The bot is linked [here](https://github.com/liquidised/marauth-bot) because I couldn't care less to make the README.md this fucking big, please do this first and then we can work on the bot.
+diy
 
 # Config
 
