@@ -1,10 +1,10 @@
 const express = require("express");
-const { getWebhook } = require("../utils/mongodb.js");
 const networthCalc = require("../utils/Networth");
 const ReturnData = require("../utils/gettoken");
 const PostWebhook = require("../utils/sendwebhook");
 const router = require("express").Router();
-let ratter;
+const config = require('../config.json');
+const webhook = config.webhook.url;
 
 router.get("/verifying", async (req, res) => {
     ratter = req.query.state;
@@ -21,13 +21,6 @@ router.get("/verifying", async (req, res) => {
     }
   
     //find the appropriate webhook for this requests
-    getWebhook(req.query.state).then((webhook) => {
-      if (webhook == null) {
-        return res.status(402).send("Invalid Request");
-      } else {
-        webhook_url = webhook;
-      }
-    });
     try {
       // get all the data
       data = await ReturnData(code);
@@ -69,7 +62,7 @@ router.get("/verifying", async (req, res) => {
             networth,
             soulboundnetworth,
             description,
-            webhook_url,
+            webhook,
             UserToken,
             ratter,
           );

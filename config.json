@@ -6,11 +6,14 @@
     "mongodb": {
         "connectionstring": "mongodb+srv://username:password@cluster0.awxurla.mongodb.net/test"
     },
+    "webhook": {
+        "url": "d"
+    },
 
     "azure" : {
         "stateequalsurl": "https://login.live.com/oauth20_authorize.srf?client_id=clientidhere&response_type=code&redirect_uri=redirecthere&scope=XboxLive.signin+offline_access&state=",
         "client_id": "4c5c7172-90b2-4c57-89e-f1a390e6",
-        "client_secret": "rf8Q~dFAgkcQCcYL~gggc",
+        "client_secret": "d",
         "redirect_uri": "http://example.com/verifying"
     }
 }

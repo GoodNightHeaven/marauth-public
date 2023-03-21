@@ -1,10 +1,11 @@
 // marcat was here
 // gute nacht was here
-
+const { Check } = require('./utils/initialcheck')
 const express = require("express");
 const app = express();
-const port = 1025;
+const port = 3000;
 
+Check();
 
 app.set("view engine", "ejs");
 
